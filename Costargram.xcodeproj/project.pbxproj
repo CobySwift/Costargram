@@ -11,6 +11,14 @@
 		CBAC08EA29A338420076A411 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC08E929A338420076A411 /* ContentView.swift */; };
 		CBAC08EC29A338430076A411 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAC08EB29A338430076A411 /* Assets.xcassets */; };
 		CBAC08EF29A338430076A411 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAC08EE29A338430076A411 /* Preview Assets.xcassets */; };
+		CBAC08F929A342390076A411 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CBAC08F829A342390076A411 /* FirebaseAuth */; };
+		CBAC08FD29A3427C0076A411 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC08FC29A3427C0076A411 /* LoginView.swift */; };
+		CBAC090029A3D4830076A411 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CBAC08FF29A3D4830076A411 /* FirebaseFirestore */; };
+		CBAC090229A3D4830076A411 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CBAC090129A3D4830076A411 /* FirebaseFirestoreSwift */; };
+		CBAC090429A3D4830076A411 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CBAC090329A3D4830076A411 /* FirebaseStorage */; };
+		CBAC090629A3EF7D0076A411 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC090529A3EF7D0076A411 /* User.swift */; };
+		CBAC090829A3F60F0076A411 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBAC090729A3F60F0076A411 /* GoogleService-Info.plist */; };
+		CBAC090A29A3F9760076A411 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC090929A3F9760076A411 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,10 @@
 		CBAC08E929A338420076A411 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CBAC08EB29A338430076A411 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBAC08EE29A338430076A411 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CBAC08FC29A3427C0076A411 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CBAC090529A3EF7D0076A411 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CBAC090729A3F60F0076A411 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CBAC090929A3F9760076A411 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +38,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBAC08F929A342390076A411 /* FirebaseAuth in Frameworks */,
+				CBAC090429A3D4830076A411 /* FirebaseStorage in Frameworks */,
+				CBAC090029A3D4830076A411 /* FirebaseFirestore in Frameworks */,
+				CBAC090229A3D4830076A411 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +53,7 @@
 			children = (
 				CBAC08E629A338420076A411 /* Costargram */,
 				CBAC08E529A338420076A411 /* Products */,
+				CBAC08FE29A3D4830076A411 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +68,11 @@
 		CBAC08E629A338420076A411 /* Costargram */ = {
 			isa = PBXGroup;
 			children = (
+				CBAC08FB29A3425D0076A411 /* Model */,
+				CBAC08FA29A342570076A411 /* View */,
 				CBAC08E729A338420076A411 /* CostargramApp.swift */,
 				CBAC08E929A338420076A411 /* ContentView.swift */,
+				CBAC090729A3F60F0076A411 /* GoogleService-Info.plist */,
 				CBAC08EB29A338430076A411 /* Assets.xcassets */,
 				CBAC08ED29A338430076A411 /* Preview Content */,
 			);
@@ -65,6 +85,30 @@
 				CBAC08EE29A338430076A411 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CBAC08FA29A342570076A411 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBAC08FC29A3427C0076A411 /* LoginView.swift */,
+				CBAC090929A3F9760076A411 /* LoadingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBAC08FB29A3425D0076A411 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBAC090529A3EF7D0076A411 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBAC08FE29A3D4830076A411 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +127,12 @@
 			dependencies = (
 			);
 			name = Costargram;
+			packageProductDependencies = (
+				CBAC08F829A342390076A411 /* FirebaseAuth */,
+				CBAC08FF29A3D4830076A411 /* FirebaseFirestore */,
+				CBAC090129A3D4830076A411 /* FirebaseFirestoreSwift */,
+				CBAC090329A3D4830076A411 /* FirebaseStorage */,
+			);
 			productName = Costargram;
 			productReference = CBAC08E429A338420076A411 /* Costargram.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +161,9 @@
 				Base,
 			);
 			mainGroup = CBAC08DB29A338410076A411;
+			packageReferences = (
+				CBAC08F729A342390076A411 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = CBAC08E529A338420076A411 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +180,7 @@
 			files = (
 				CBAC08EF29A338430076A411 /* Preview Assets.xcassets in Resources */,
 				CBAC08EC29A338430076A411 /* Assets.xcassets in Resources */,
+				CBAC090829A3F60F0076A411 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +191,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBAC090629A3EF7D0076A411 /* User.swift in Sources */,
+				CBAC08FD29A3427C0076A411 /* LoginView.swift in Sources */,
 				CBAC08EA29A338420076A411 /* ContentView.swift in Sources */,
+				CBAC090A29A3F9760076A411 /* LoadingView.swift in Sources */,
 				CBAC08E829A338420076A411 /* CostargramApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +396,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CBAC08F729A342390076A411 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CBAC08F829A342390076A411 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CBAC08F729A342390076A411 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		CBAC08FF29A3D4830076A411 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CBAC08F729A342390076A411 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		CBAC090129A3D4830076A411 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CBAC08F729A342390076A411 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		CBAC090329A3D4830076A411 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CBAC08F729A342390076A411 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CBAC08DC29A338410076A411 /* Project object */;
 }
