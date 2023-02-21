@@ -13,6 +13,9 @@
 		CB202C6929A4896500FBEA55 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB202C6829A4896500FBEA55 /* ProfileView.swift */; };
 		CB202C6B29A4906500FBEA55 /* ReusableProfileContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB202C6A29A4906500FBEA55 /* ReusableProfileContent.swift */; };
 		CB202C6E29A4B3D000FBEA55 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CB202C6D29A4B3D000FBEA55 /* SDWebImageSwiftUI */; };
+		CB202C7029A4BEE600FBEA55 /* CreateNewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB202C6F29A4BEE600FBEA55 /* CreateNewPost.swift */; };
+		CB202C7229A4BEF600FBEA55 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB202C7129A4BEF600FBEA55 /* Post.swift */; };
+		CB202C7429A4D71300FBEA55 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB202C7329A4D71300FBEA55 /* PostView.swift */; };
 		CBAC08E829A338420076A411 /* CostargramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC08E729A338420076A411 /* CostargramApp.swift */; };
 		CBAC08EA29A338420076A411 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC08E929A338420076A411 /* ContentView.swift */; };
 		CBAC08EC29A338430076A411 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAC08EB29A338430076A411 /* Assets.xcassets */; };
@@ -33,6 +36,9 @@
 		CB202C6629A487CC00FBEA55 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		CB202C6829A4896500FBEA55 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CB202C6A29A4906500FBEA55 /* ReusableProfileContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableProfileContent.swift; sourceTree = "<group>"; };
+		CB202C6F29A4BEE600FBEA55 /* CreateNewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPost.swift; sourceTree = "<group>"; };
+		CB202C7129A4BEF600FBEA55 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		CB202C7329A4D71300FBEA55 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		CBAC08E429A338420076A411 /* Costargram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Costargram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAC08E729A338420076A411 /* CostargramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostargramApp.swift; sourceTree = "<group>"; };
 		CBAC08E929A338420076A411 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +81,8 @@
 				CB202C6629A487CC00FBEA55 /* MainView.swift */,
 				CB202C6829A4896500FBEA55 /* ProfileView.swift */,
 				CB202C6A29A4906500FBEA55 /* ReusableProfileContent.swift */,
+				CB202C6F29A4BEE600FBEA55 /* CreateNewPost.swift */,
+				CB202C7329A4D71300FBEA55 /* PostView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -141,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				CBAC090529A3EF7D0076A411 /* User.swift */,
+				CB202C7129A4BEF600FBEA55 /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -237,12 +246,15 @@
 				CBAC090629A3EF7D0076A411 /* User.swift in Sources */,
 				CB202C6929A4896500FBEA55 /* ProfileView.swift in Sources */,
 				CB202C6B29A4906500FBEA55 /* ReusableProfileContent.swift in Sources */,
+				CB202C7229A4BEF600FBEA55 /* Post.swift in Sources */,
 				CB202C6729A487CC00FBEA55 /* MainView.swift in Sources */,
 				CBAC08FD29A3427C0076A411 /* LoginView.swift in Sources */,
 				CBAC08EA29A338420076A411 /* ContentView.swift in Sources */,
 				CB202C6229A486DF00FBEA55 /* RegisterView.swift in Sources */,
+				CB202C7029A4BEE600FBEA55 /* CreateNewPost.swift in Sources */,
 				CBAC090A29A3F9760076A411 /* LoadingView.swift in Sources */,
 				CB202C6529A4874400FBEA55 /* View+Extensions.swift in Sources */,
+				CB202C7429A4D71300FBEA55 /* PostView.swift in Sources */,
 				CBAC08E829A338420076A411 /* CostargramApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
