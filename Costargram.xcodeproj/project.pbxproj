@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB202C6229A486DF00FBEA55 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB202C6129A486DF00FBEA55 /* RegisterView.swift */; };
+		CB202C6529A4874400FBEA55 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB202C6429A4874400FBEA55 /* View+Extensions.swift */; };
+		CB202C6729A487CC00FBEA55 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB202C6629A487CC00FBEA55 /* MainView.swift */; };
+		CB202C6929A4896500FBEA55 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB202C6829A4896500FBEA55 /* ProfileView.swift */; };
+		CB202C6B29A4906500FBEA55 /* ReusableProfileContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB202C6A29A4906500FBEA55 /* ReusableProfileContent.swift */; };
+		CB202C6E29A4B3D000FBEA55 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CB202C6D29A4B3D000FBEA55 /* SDWebImageSwiftUI */; };
 		CBAC08E829A338420076A411 /* CostargramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC08E729A338420076A411 /* CostargramApp.swift */; };
 		CBAC08EA29A338420076A411 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC08E929A338420076A411 /* ContentView.swift */; };
 		CBAC08EC29A338430076A411 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAC08EB29A338430076A411 /* Assets.xcassets */; };
@@ -22,6 +28,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB202C6129A486DF00FBEA55 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		CB202C6429A4874400FBEA55 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		CB202C6629A487CC00FBEA55 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		CB202C6829A4896500FBEA55 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		CB202C6A29A4906500FBEA55 /* ReusableProfileContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableProfileContent.swift; sourceTree = "<group>"; };
 		CBAC08E429A338420076A411 /* Costargram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Costargram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAC08E729A338420076A411 /* CostargramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostargramApp.swift; sourceTree = "<group>"; };
 		CBAC08E929A338420076A411 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB202C6E29A4B3D000FBEA55 /* SDWebImageSwiftUI in Frameworks */,
 				CBAC08F929A342390076A411 /* FirebaseAuth in Frameworks */,
 				CBAC090429A3D4830076A411 /* FirebaseStorage in Frameworks */,
 				CBAC090029A3D4830076A411 /* FirebaseFirestore in Frameworks */,
@@ -48,6 +60,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB202C5F29A486C500FBEA55 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CBAC08FC29A3427C0076A411 /* LoginView.swift */,
+				CB202C6129A486DF00FBEA55 /* RegisterView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CB202C6029A486CA00FBEA55 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CB202C6629A487CC00FBEA55 /* MainView.swift */,
+				CB202C6829A4896500FBEA55 /* ProfileView.swift */,
+				CB202C6A29A4906500FBEA55 /* ReusableProfileContent.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CB202C6329A4872600FBEA55 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CB202C6429A4874400FBEA55 /* View+Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		CBAC08DB29A338410076A411 = {
 			isa = PBXGroup;
 			children = (
@@ -90,7 +129,9 @@
 		CBAC08FA29A342570076A411 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CBAC08FC29A3427C0076A411 /* LoginView.swift */,
+				CB202C6329A4872600FBEA55 /* Helpers */,
+				CB202C6029A486CA00FBEA55 /* Main */,
+				CB202C5F29A486C500FBEA55 /* Login */,
 				CBAC090929A3F9760076A411 /* LoadingView.swift */,
 			);
 			path = View;
@@ -132,6 +173,7 @@
 				CBAC08FF29A3D4830076A411 /* FirebaseFirestore */,
 				CBAC090129A3D4830076A411 /* FirebaseFirestoreSwift */,
 				CBAC090329A3D4830076A411 /* FirebaseStorage */,
+				CB202C6D29A4B3D000FBEA55 /* SDWebImageSwiftUI */,
 			);
 			productName = Costargram;
 			productReference = CBAC08E429A338420076A411 /* Costargram.app */;
@@ -163,6 +205,7 @@
 			mainGroup = CBAC08DB29A338410076A411;
 			packageReferences = (
 				CBAC08F729A342390076A411 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				CB202C6C29A4B3D000FBEA55 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = CBAC08E529A338420076A411 /* Products */;
 			projectDirPath = "";
@@ -192,9 +235,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBAC090629A3EF7D0076A411 /* User.swift in Sources */,
+				CB202C6929A4896500FBEA55 /* ProfileView.swift in Sources */,
+				CB202C6B29A4906500FBEA55 /* ReusableProfileContent.swift in Sources */,
+				CB202C6729A487CC00FBEA55 /* MainView.swift in Sources */,
 				CBAC08FD29A3427C0076A411 /* LoginView.swift in Sources */,
 				CBAC08EA29A338420076A411 /* ContentView.swift in Sources */,
+				CB202C6229A486DF00FBEA55 /* RegisterView.swift in Sources */,
 				CBAC090A29A3F9760076A411 /* LoadingView.swift in Sources */,
+				CB202C6529A4874400FBEA55 /* View+Extensions.swift in Sources */,
 				CBAC08E829A338420076A411 /* CostargramApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +446,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CB202C6C29A4B3D000FBEA55 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		CBAC08F729A342390076A411 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -409,6 +465,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CB202C6D29A4B3D000FBEA55 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB202C6C29A4B3D000FBEA55 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
 		CBAC08F829A342390076A411 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CBAC08F729A342390076A411 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
