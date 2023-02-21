@@ -16,6 +16,8 @@
 		CB202C7029A4BEE600FBEA55 /* CreateNewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB202C6F29A4BEE600FBEA55 /* CreateNewPost.swift */; };
 		CB202C7229A4BEF600FBEA55 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB202C7129A4BEF600FBEA55 /* Post.swift */; };
 		CB202C7429A4D71300FBEA55 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB202C7329A4D71300FBEA55 /* PostView.swift */; };
+		CB202C7629A51DC000FBEA55 /* ReusablePostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB202C7529A51DC000FBEA55 /* ReusablePostsView.swift */; };
+		CB202C7829A5242300FBEA55 /* PostCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB202C7729A5242300FBEA55 /* PostCardView.swift */; };
 		CBAC08E829A338420076A411 /* CostargramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC08E729A338420076A411 /* CostargramApp.swift */; };
 		CBAC08EA29A338420076A411 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC08E929A338420076A411 /* ContentView.swift */; };
 		CBAC08EC29A338430076A411 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAC08EB29A338430076A411 /* Assets.xcassets */; };
@@ -39,6 +41,8 @@
 		CB202C6F29A4BEE600FBEA55 /* CreateNewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPost.swift; sourceTree = "<group>"; };
 		CB202C7129A4BEF600FBEA55 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CB202C7329A4D71300FBEA55 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		CB202C7529A51DC000FBEA55 /* ReusablePostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusablePostsView.swift; sourceTree = "<group>"; };
+		CB202C7729A5242300FBEA55 /* PostCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardView.swift; sourceTree = "<group>"; };
 		CBAC08E429A338420076A411 /* Costargram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Costargram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAC08E729A338420076A411 /* CostargramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostargramApp.swift; sourceTree = "<group>"; };
 		CBAC08E929A338420076A411 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 				CB202C6A29A4906500FBEA55 /* ReusableProfileContent.swift */,
 				CB202C6F29A4BEE600FBEA55 /* CreateNewPost.swift */,
 				CB202C7329A4D71300FBEA55 /* PostView.swift */,
+				CB202C7529A51DC000FBEA55 /* ReusablePostsView.swift */,
+				CB202C7729A5242300FBEA55 /* PostCardView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -250,10 +256,12 @@
 				CB202C6729A487CC00FBEA55 /* MainView.swift in Sources */,
 				CBAC08FD29A3427C0076A411 /* LoginView.swift in Sources */,
 				CBAC08EA29A338420076A411 /* ContentView.swift in Sources */,
+				CB202C7629A51DC000FBEA55 /* ReusablePostsView.swift in Sources */,
 				CB202C6229A486DF00FBEA55 /* RegisterView.swift in Sources */,
 				CB202C7029A4BEE600FBEA55 /* CreateNewPost.swift in Sources */,
 				CBAC090A29A3F9760076A411 /* LoadingView.swift in Sources */,
 				CB202C6529A4874400FBEA55 /* View+Extensions.swift in Sources */,
+				CB202C7829A5242300FBEA55 /* PostCardView.swift in Sources */,
 				CB202C7429A4D71300FBEA55 /* PostView.swift in Sources */,
 				CBAC08E829A338420076A411 /* CostargramApp.swift in Sources */,
 			);
